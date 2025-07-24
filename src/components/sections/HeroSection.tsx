@@ -45,7 +45,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-        {/* Main Title with Animation */}
+        {/* Main Title */}
         <div className="mb-8">
           <h1 className="font-bebas text-6xl md:text-8xl lg:text-9xl tracking-wider text-foreground mb-4">
             SEMPRESEF
@@ -55,49 +55,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Animated Text Carousel */}
-        <div className="h-16 mb-12 flex items-center justify-center">
-          <p className="font-inter text-lg md:text-2xl text-muted-foreground animate-fade-in">
-            {heroTexts[currentText]}
-          </p>
-        </div>
-
-        {/* Audio Equalizer */}
-        <div className="flex justify-center mb-12">
-          <AudioEqualizer 
-            isPlaying={isPlaying} 
-            barCount={20} 
-            className="h-16 w-64"
-          />
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        {/* Anunturi Button */}
+        <div className="flex justify-center items-center">
           <Button
             size="lg"
-            onClick={() => setIsPlaying(!isPlaying)}
             className="bg-gradient-radio hover:scale-110 transition-all duration-300 glow-primary font-bebas text-xl tracking-wide px-8 py-6 rounded-2xl"
           >
-            <Radio className="w-6 h-6 mr-3" />
-            ASCULTĂ LIVE
+            ANUNTURI
           </Button>
-
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-secondary text-secondary hover:bg-secondary hover:text-background transition-all duration-300 font-bebas text-lg tracking-wide px-8 py-6 rounded-2xl"
-          >
-            <Volume2 className="w-5 h-5 mr-3" />
-            PROGRAM RADIO
-          </Button>
-        </div>
-
-        {/* Live Indicator */}
-        <div className="mt-12 flex items-center justify-center gap-3">
-          <div className="w-3 h-3 bg-primary rounded-full pulse-radio"></div>
-          <span className="font-inter text-sm text-muted-foreground">
-            Live acum: <span className="text-primary font-medium">Dimineți cu Seba</span>
-          </span>
         </div>
       </div>
 
