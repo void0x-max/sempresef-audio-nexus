@@ -6,9 +6,7 @@ import { Button } from '@/components/ui/button';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
-    { label: 'Contact', href: '#contact' },
-  ];
+  const navItems = [];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-glass-border">
