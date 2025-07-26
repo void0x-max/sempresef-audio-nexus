@@ -121,7 +121,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter overflow-x-hidden;
+    @apply bg-gradient-to-br from-gray-950 via-black to-gray-950 text-foreground font-inter overflow-x-hidden;
     cursor: none; /* Custom cursor will replace */
   }
 

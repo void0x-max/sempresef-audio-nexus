@@ -15,23 +15,23 @@ const Navbar = () => {
           {/* Logo */}
           <Logo />
 
-          {/* Social Media Icons */}
-          <div className="flex items-center gap-3">
+          {/* Social Media Icons - Centered */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center gap-4">
             <a 
               href="https://instagram.com/sempresefmedia" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-primary/10 transition-colors group"
+              className="p-3 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-500 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
-              <Instagram className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <Instagram className="w-5 h-5 text-white" />
             </a>
             <a 
               href="https://tiktok.com/@sempresefmedia" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-primary/10 transition-colors group"
+              className="p-3 rounded-2xl bg-gradient-to-r from-gray-800 to-black hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
-              <svg className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" viewBox="0 0 24 24" fill="currentColor">
+              <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
               </svg>
             </a>
@@ -39,24 +39,10 @@ const Navbar = () => {
               href="https://t.me/sempresefmedia" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-primary/10 transition-colors group"
+              className="p-3 rounded-2xl bg-gradient-to-r from-blue-400 to-blue-600 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
-              <Send className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              <Send className="w-5 h-5 text-white" />
             </a>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="relative font-inter text-sm font-medium text-foreground hover:text-primary transition-colors duration-300 group"
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-radio group-hover:w-full transition-all duration-300"></span>
-              </a>
-            ))}
           </div>
 
           {/* Live Button & Mobile Menu */}
@@ -64,7 +50,7 @@ const Navbar = () => {
             <Button
               variant="default"
               size="sm"
-              className="hidden sm:flex items-center gap-2 bg-gradient-radio hover:scale-105 transition-transform duration-300 glow-primary"
+              className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl border-0"
             >
               <Radio className="w-4 h-4" />
               <span className="font-bebas tracking-wide">LIVE</span>
@@ -97,7 +83,7 @@ const Navbar = () => {
               <Button
                 variant="default"
                 size="sm"
-                className="flex items-center gap-2 bg-gradient-radio hover:scale-105 transition-transform duration-300 glow-primary w-fit"
+                className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl border-0 w-fit"
               >
                 <Radio className="w-4 h-4" />
                 <span className="font-bebas tracking-wide">LIVE</span>
